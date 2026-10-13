@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Anamit Nand Deo — SEO Executive, Delhi NCR</title>
+		<meta
+			name="description"
+			content="Anamit Nand Deo — SEO Executive from Bihar, now in Delhi NCR. 3 years of on-page, off-page and technical SEO."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<style>
+			:root {
+				--paper: #fbf7ef;
+				--paper2: #f4edde;
+				--ink: #1d1a16;
+				--muted: #6f675c;
+				--line: #e5dcc9;
+				--card: #ffffff;
+				--green: #166534;
+				--green-soft: #e6f2e7;
+				--yellow: #fef08a;
+				--radius: 18px;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				font-family: "Inter", system-ui, sans-serif;
+				background: var(--paper);
+				color: var(--ink);
+				line-height: 1.65;
+				font-size: 16px;
+				background-image: radial-gradient(#d9d0bb 1px, transparent 1px);
+				background-size: 26px 26px;
+			}
+			body::before {
+				content: "";
+				position: fixed;
+				inset: 0;
+				background: var(--paper);
+				opacity: 0.92;
+				z-index: -1;
+				pointer-events: none;
+			}
+			h1,
+			h2,
+			h3 {
+				font-family: "Fraunces", serif;
+				letter-spacing: -0.02em;
+				line-height: 1.1;
+			}
+			.hand {
+				font-family: "Caveat", cursive;
+			}
+			a {
+				color: inherit;
+			}
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 0 22px;
+			}
+			/* nav */
+			.topbar {
+				position: sticky;
+				top: 0;
+				z-index: 40;
+				background: rgba(251, 247, 239, 0.92);
+				backdrop-filter: blur(10px);
+				border-bottom: 1px solid var(--line);
+			}
+			.topbar-inner {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 12px 22px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 12px;
+			}
+			.me {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+			.me-face {
+				width: 42px;
+				height: 42px;
+				border-radius: 50%;
+				background: var(--ink);
+				color: var(--paper);
+				display: grid;
+				place-items: center;
+				font-weight: 700;
+				font-family: "Fraunces", serif;
+				flex-shrink: 0;
+			}
+			.me b {
+				font-size: 15px;
+				display: block;
+				line-height: 1.2;
+			}
+			.me span {
+				font-size: 12.5px;
+				color: var(--muted);
+			}
+			.links {
+				display: flex;
+				gap: 20px;
+				font-size: 14px;
+				font-weight: 600;
+				color: #4a443c;
+			}
+			.links a:hover {
+				color: var(--green);
+				text-decoration: underline;
+				text-underline-offset: 4px;
+			}
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				padding: 11px 20px;
+				border-radius: 100px;
+				font-weight: 700;
+				font-size: 14px;
+				border: 1.5px solid var(--ink);
+				background: var(--ink);
+				color: #fff;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			.btn:hover {
+				transform: translateY(-1px);
+			}
+			.btn-light {
+				background: #fff;
+				color: var(--ink);
+			}
+			.btn-green {
+				background: var(--green);
+				border-color: var(--green);
+			}
+			.menu-btn {
+				display: none;
+				border: 1px solid var(--line);
+				background: #fff;
+				border-radius: 10px;
+				padding: 8px 12px;
+				font-size: 18px;
+			}
+			/* hero */
+			.hero {
+				display: grid;
+				grid-template-columns: 1.25fr 0.75fr;
+				gap: 32px;
+				padding: 44px 0 10px;
+				align-items: start;
+			}
+			.kicker {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				background: #fff;
+				border: 1px solid var(--line);
+				border-radius: 100px;
+				padding: 7px 14px;
+				font-size: 13px;
+				font-weight: 600;
+				box-shadow: 2px 2px 0 var(--ink);
+			}
+			.kicker .pulse {
+				width: 9px;
+				height: 9px;
+				background: #16a34a;
+				border-radius: 50%;
+			}
+			.hero h1 {
+				font-size: clamp(40px, 6vw, 62px);
+				margin: 18px 0 10px;
+			}
+			.hero h1 .hl {
+				background: linear-gradient(transparent 62%, var(--yellow) 62%);
+				padding: 0 4px;
+			}
+			.hero-sub {
+				font-size: 17.5px;
+				color: #3d3831;
+				max-width: 600px;
+			}
+			.hero-sub b {
+				color: var(--ink);
+			}
+			.hand-note {
+				font-family: "Caveat", cursive;
+				font-size: 22px;
+				color: var(--green);
+				transform: rotate(-2deg);
+				margin-top: 12px;
+				display: inline-block;
+			}
+			.hero-actions {
+				display: flex;
+				gap: 10px;
+				margin: 20px 0;
+				flex-wrap: wrap;
+			}
+			.facts {
+				display: flex;
+				gap: 10px;
+				flex-wrap: wrap;
+				margin-top: 6px;
+			}
+			.fact {
+				background: #fff;
+				border: 1px solid var(--line);
+				border-radius: 12px;
+				padding: 8px 13px;
+				font-size: 13px;
+				font-weight: 600;
+			}
+			.fact i {
+				color: var(--green);
+				margin-right: 6px;
+			}
+			/* polaroid */
+			.polaroid {
+				background: #fff;
+				border: 1px solid var(--line);
+				padding: 12px 12px 16px;
+				border-radius: 6px;
+				box-shadow: 5px 6px 0 rgba(29, 26, 22, 0.9);
+				transform: rotate(2.5deg);
+			}
+			.polaroid .photo {
+				aspect-ratio: 4/4.4;
+				background: var(--paper2);
+				border: 1px dashed #c9bfa9;
+				border-radius: 4px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				padding: 20px;
+				position: relative;
+				overflow: hidden;
+			}
+			.polaroid .photo img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.photo-initials {
+				font-family: "Fraunces", serif;
+				font-size: 64px;
+				font-weight: 700;
+			}
+			.tape {
+				width: 110px;
+				height: 28px;
+				background: rgba(254, 240, 138, 0.9);
+				border-left: 1px dashed rgba(0, 0, 0, 0.15);
+				border-right: 1px dashed rgba(0, 0, 0, 0.15);
+				margin: -26px auto 10px;
+				transform: rotate(-4deg);
+				position: relative;
+				z-index: 2;
+			}
+			.caption {
+				font-family: "Caveat", cursive;
+				font-size: 20px;
+				text-align: center;
+				margin-top: 10px;
+				line-height: 1.3;
+			}
+			.side-box {
+				background: #fff;
+				border: 1px solid var(--line);
+				border-radius: var(--radius);
+				padding: 18px;
+				margin-top: 18px;
+				transform: rotate(-0.6deg);
+			}
+			.side-box h4 {
+				font-size: 14px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--muted);
+				margin-bottom: 10px;
+			}
+			.side-box p {
+				font-size: 14px;
+				color: #3d3831;
+			}
+			.side-box .hand {
+				color: var(--green);
+				font-size: 19px;
+			}
+			/* sections */
+			section {
+				padding: 38px 0;
+			}
+			.sec-label {
+				font-family: "Caveat", cursive;
+				font-size: 22px;
+				color: var(--green);
+			}
+			.sec-title {
+				font-size: clamp(28px, 4vw, 38px);
+				margin: 4px 0 10px;
+			}
+			.sec-desc {
+				color: #4c463e;
+				max-width: 680px;
+			}
+			.paper-card {
+				background: var(--card);
+				border: 1.5px solid var(--ink);
+				border-radius: var(--radius);
+				padding: 24px;
+				box-shadow: 4px 4px 0 var(--ink);
+			}
+			.grid2 {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 16px;
+				margin-top: 20px;
+			}
+			.work-card h3 {
+				font-size: 20px;
+				margin-bottom: 2px;
+			}
+			.work-card .where {
+				font-size: 13.5px;
+				font-weight: 700;
+				color: var(--green);
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+			}
+			.work-card .when {
+				font-size: 13px;
+				color: var(--muted);
+				margin: 4px 0 10px;
+			}
+			.work-card ul {
+				margin-left: 18px;
+				font-size: 14.5px;
+				color: #3a352f;
+			}
+			.work-card li {
+				margin: 6px 0;
+			}
+			.lesson {
+				margin-top: 12px;
+				background: var(--green-soft);
+				border: 1px dashed var(--green);
+				border-radius: 12px;
+				padding: 10px 14px;
+				font-size: 14px;
+			}
+			.lesson strong {
+				color: var(--green);
+			}
+			.journal {
+				margin-top: 20px;
+				display: grid;
+				gap: 16px;
+			}
+			.entry {
+				background: #fff;
+				border: 1.5px solid var(--ink);
+				border-radius: var(--radius);
+				padding: 22px;
+				box-shadow: 4px 4px 0 rgba(29, 26, 22, 0.12);
+			}
+			.entry-top {
+				display: flex;
+				justify-content: space-between;
+				gap: 12px;
+				align-items: start;
+				flex-wrap: wrap;
+			}
+			.entry-top h3 {
+				font-size: 22px;
+			}
+			.entry-top a {
+				font-size: 13px;
+				font-weight: 700;
+				color: var(--green);
+				text-decoration: underline;
+				text-underline-offset: 4px;
+			}
+			.entry p {
+				font-size: 15px;
+				color: #35302a;
+				margin: 10px 0;
+			}
+			.did {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 10px;
+				margin-top: 12px;
+			}
+			.did div {
+				background: var(--paper);
+				border: 1px solid var(--line);
+				border-radius: 12px;
+				padding: 12px 14px;
+				font-size: 13.5px;
+			}
+			.did b {
+				display: block;
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 0.07em;
+				color: var(--muted);
+				margin-bottom: 4px;
+			}
+			.strike {
+				text-decoration: line-through;
+				text-decoration-color: #dc2626;
+				text-decoration-thickness: 2px;
+			}
+			/* toolkit */
+			.tool-table {
+				margin-top: 18px;
+				background: #fff;
+				border: 1.5px solid var(--ink);
+				border-radius: var(--radius);
+				overflow: hidden;
+				box-shadow: 4px 4px 0 var(--ink);
+			}
+			.tool-row {
+				display: grid;
+				grid-template-columns: 180px 1fr;
+				border-bottom: 1px solid var(--line);
+				font-size: 14.5px;
+			}
+			.tool-row:last-child {
+				border-bottom: 0;
+			}
+			.tool-row div {
+				padding: 14px 18px;
+			}
+			.tool-row div:first-child {
+				font-weight: 700;
+				background: var(--paper);
+				border-right: 1px solid var(--line);
+			}
+			.pill {
+				display: inline-block;
+				background: var(--paper);
+				border: 1px solid var(--line);
+				border-radius: 100px;
+				padding: 5px 12px;
+				margin: 3px 4px 3px 0;
+				font-size: 13px;
+				font-weight: 600;
+			}
+			/* about life */
+			.life {
+				display: grid;
+				grid-template-columns: 1.1fr 0.9fr;
+				gap: 16px;
+				margin-top: 20px;
+			}
+			.note-yellow {
+				background: #fefce8;
+				border: 1.5px solid var(--ink);
+				border-radius: var(--radius);
+				padding: 22px;
+				transform: rotate(0.6deg);
+				box-shadow: 4px 4px 0 var(--ink);
+			}
+			.note-yellow ul {
+				list-style: none;
+				margin-top: 10px;
+			}
+			.note-yellow li {
+				padding: 10px 0;
+				border-bottom: 1px dashed #d6cfae;
+				font-size: 14.5px;
+			}
+			.note-yellow li:last-child {
+				border: 0;
+			}
+			/* contact */
+			.contact {
+				background: var(--ink);
+				color: #f5f1e8;
+				border-radius: 24px;
+				padding: 32px;
+				display: grid;
+				grid-template-columns: 1.2fr 0.8fr;
+				gap: 24px;
+				margin-top: 18px;
+			}
+			.contact h2 {
+				font-size: clamp(28px, 4vw, 38px);
+				color: #fff;
+			}
+			.contact p {
+				color: #c9c2b4;
+				font-size: 15px;
+				margin-top: 10px;
+			}
+			.contact .hand {
+				color: var(--yellow);
+				font-size: 22px;
+			}
+			.c-list {
+				display: grid;
+				gap: 10px;
+			}
+			.c-list a {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				background: #26211c;
+				border: 1px solid #3d372f;
+				border-radius: 14px;
+				padding: 13px 15px;
+				font-weight: 600;
+				font-size: 14px;
+				text-decoration: none;
+				color: #fff;
+			}
+			.c-list a:hover {
+				border-color: var(--yellow);
+			}
+			.c-list i {
+				width: 36px;
+				height: 36px;
+				display: grid;
+				place-items: center;
+				background: var(--yellow);
+				color: #111;
+				border-radius: 10px;
+				flex-shrink: 0;
+			}
+			footer {
+				text-align: center;
+				color: var(--muted);
+				font-size: 13px;
+				padding: 28px 0 36px;
+			}
+			footer .hand {
+				font-size: 18px;
+				color: #4c463e;
+			}
+			.reveal {
+				opacity: 0;
+				transform: translateY(14px);
+				transition: 0.6s ease;
+			}
+			.reveal.visible {
+				opacity: 1;
+				transform: none;
+			}
+			@media (max-width: 860px) {
+				.hero,
+				.grid2,
+				.life,
+				.contact,
+				.did {
+					grid-template-columns: 1fr;
+				}
+				.links {
+					display: none;
+				}
+				.links.open {
+					display: flex;
+					position: absolute;
+					top: 64px;
+					left: 12px;
+					right: 12px;
+					background: #fff;
+					border: 1.5px solid var(--ink);
+					border-radius: 14px;
+					padding: 16px;
+					flex-direction: column;
+					z-index: 50;
+				}
+				.menu-btn {
+					display: block;
+				}
+				.tool-row {
+					grid-template-columns: 1fr;
+				}
+				.tool-row div:first-child {
+					border-right: 0;
+					border-bottom: 1px solid var(--line);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbar-inner">
+				<div class="me">
+					<!-- <div class="me-face">A</div> -->
+					<div>
+						<b>Anamit Nand Deo</b>
+            <!-- <span>SEO Executive • Delhi NCR</span> -->
+
+					</div>
+				</div>
+				<div class="links" id="navLinks">
+					<a href="#work">Work</a>
+					<a href="#projects">Projects</a>
+					<a href="#toolkit">Toolkit</a>
+					<a href="#life">About</a>
+					<a href="#contact">Contact</a>
+				</div>
+				<div style="display: flex; gap: 8px; align-items: center">
+					<a class="btn" href="#contact"
+						>Say hello <i class="fa-solid fa-arrow-right"></i
+					></a>
+					<button
+						class="menu-btn"
+						onclick="
+							document
+								.getElementById('navLinks')
+								.classList.toggle('open')
+						"
+					>
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- HERO -->
+			<div class="hero">
+				<div>
+					<span class="kicker"
+						><span class="pulse"></span> Currently: SEO Executive at
+						L4RG US, LLC (remote)</span
+					>
+					<h1>
+						Hi, I'm Anamit. I help websites
+						<span class="hl">get found on Google.</span>
+					</h1>
+					<p class="hero-sub">
+						I'm an <b>SEO Executive based in Delhi NCR</b>,
+						originally from Muzaffarpur, Bihar. For the last
+						<b>3 years</b> I've been doing the unglamorous work
+						behind rankings — audits, fixing pages, writing briefs,
+						building links one by one.
+					</p>
+					<p class="hero-sub" style="margin-top: 10px">
+						I started in Dec 2022 at Spin On Web doing SEO + airline
+						travel support at the same time. It was chaotic. It also
+						taught me how real people actually search.
+					</p>
+					<span class="hand-note"
+						>↳ Spoiler: no “#1 in 7 days” tricks here. Just basics
+						done properly.</span
+					>
+					<div class="hero-actions">
+						<a class="btn btn-green" href="#projects"
+							><i class="fa-solid fa-folder-open"></i> See my
+							work</a
+						>
+						<a
+							class="btn btn-light"
+							href="https://drive.google.com/file/d/1WYoxtH2Nz3jP9K0hGNncuh7u9XZ3RM4y/view"
+							target="_blank"
+							><i class="fa-solid fa-file-lines"></i> My resume</a
+						>
+						<a
+							class="btn btn-light"
+							href="https://wa.me/919693689852"
+							target="_blank"
+							><i class="fa-brands fa-whatsapp"></i> WhatsApp
+							me</a
+						>
+					</div>
+					<div class="facts">
+						<span class="fact"
+							><i class="fa-solid fa-location-dot"></i> Delhi NCR,
+							India</span
+						>
+						<span class="fact"
+							><i class="fa-solid fa-language"></i> Hindi +
+							English</span
+						>
+						<span class="fact"
+							><i class="fa-solid fa-briefcase"></i> 3 yrs, 3
+							companies</span
+						>
+						<span class="fact"
+							><i class="fa-solid fa-clock"></i> Replies within a
+							day</span
+						>
+					</div>
+				</div>
+
+				<div>
+					<div class="polaroid">
+						<div class="tape"></div>
+						<div class="photo">
+							<div class="photo-initials">A.</div>
+							<img
+								src="Photo.jpeg"
+								alt="Anamit Nand Deo at work on laptop in office"
+								onerror="this.remove()"
+							/>
+
+						</div>
+						<div class="caption">
+							at work - laptop open, audit in progress<br />that&apos;s me in front ☕
+						</div>
+					</div>
+					<div class="side-box">
+						<h4>A quick honest note</h4>
+						<p>
+							I’m good at on-page, off-page and the technical
+							basics. I’m still learning advanced stuff every week
+							— SEO changes too fast to pretend otherwise.
+						</p>
+						<p class="hand" style="margin-top: 8px">
+							— if you want honest SEO, we’ll get along.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- DAY TO DAY -->
+			<section>
+				<div class="sec-label">what i actually do</div>
+				<h2 class="sec-title">My normal week looks like this.</h2>
+				<p class="sec-desc">Not guru-talk. Just the work.</p>
+				<div class="grid2">
+					<div class="paper-card reveal">
+						<h3>
+							<i
+								class="fa-solid fa-magnifying-glass"
+								style="color: var(--green)"
+							></i>
+							On-page & technical
+						</h3>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 8px;
+							"
+						>
+							Keyword mapping, title/meta rewrites, internal
+							links, fixing crawl errors in Search Console,
+							checking speed, adding schema where it makes sense.
+							I check rankings, but I care more about clicks and
+							leads.
+						</p>
+					</div>
+					<div class="paper-card reveal">
+						<h3>
+							<i
+								class="fa-solid fa-link"
+								style="color: var(--green)"
+							></i>
+							Off-page
+						</h3>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 8px;
+							"
+						>
+							Mostly white-hat: guest posts, business listings,
+							directories, Quora/forums when relevant, outreach
+							emails. I’ve sent enough outreach to know most get
+							ignored — the few good links matter.
+						</p>
+					</div>
+					<div class="paper-card reveal">
+						<h3>
+							<i
+								class="fa-solid fa-pen"
+								style="color: var(--green)"
+							></i>
+							Content + design
+						</h3>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 8px;
+							"
+						>
+							I make content briefs, basic blogs, and creatives in
+							Photoshop / Canva. Nothing fancy — clear headings,
+							real answers, images that don’t slow the page.
+						</p>
+					</div>
+					<div class="paper-card reveal">
+						<h3>
+							<i
+								class="fa-solid fa-plane"
+								style="color: var(--green)"
+							></i>
+							The travel-support chapter
+						</h3>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 8px;
+							"
+						>
+							For 2+ years I also handled airline travel support —
+							bookings, changes, upset passengers at midnight. It
+							made me better at SEO: I learned how travellers
+							type, panic, and click.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- WORK -->
+			<section id="work">
+				<div class="sec-label">where i've worked</div>
+				<h2 class="sec-title">Three jobs, lots of lessons.</h2>
+				<div class="journal">
+					<div class="entry reveal">
+						<div class="entry-top">
+							<div>
+								<div
+									class="where"
+									style="
+										font-size: 12px;
+										font-weight: 800;
+										color: var(--green);
+										letter-spacing: 0.06em;
+									"
+								>
+									MAR 2026 — NOW • REMOTE (WFH)
+								</div>
+								<h3>L4RG US, LLC — SEO Executive</h3>
+							</div>
+							<span
+								class="pill"
+								style="
+									background: var(--green);
+									color: #fff;
+									border-color: var(--green);
+								"
+								>current</span
+							>
+						</div>
+						<p>
+							Working remotely for a US client. I own the SEO
+							checklist end-to-end: audit → fix on-page → brief
+							content → build links → report in plain English.
+							Still new here (4 months in), mostly listening,
+							fixing, and learning how US search intent differs.
+						</p>
+						<div class="lesson">
+							<strong>Learning right now:</strong> how to explain
+							SEO drops to non-SEO people without jargon.
+						</div>
+					</div>
+
+					<div class="entry reveal">
+						<div class="entry-top">
+							<div>
+								<div
+									style="
+										font-size: 12px;
+										font-weight: 800;
+										color: var(--green);
+										letter-spacing: 0.06em;
+									"
+								>
+									FEB 2025 — MAR 2026 • ~1 YEAR
+								</div>
+								<h3>
+									Kaeera Infotechnology — Off-Page SEO +
+									Travel Support
+								</h3>
+							</div>
+						</div>
+						<p>
+							This role was heavily off-page. Guest posting,
+							citations, profiles, forums — volume work. Some
+							campaigns moved rankings nicely, some flopped. Also
+							supported the travel side, which kept me close to
+							real customer language.
+						</p>
+						<div class="lesson">
+							<strong>What it taught me:</strong> one relevant
+							link beats twenty directory links. And tracking
+							everything in a sheet saves you later.
+						</div>
+					</div>
+
+					<div class="entry reveal">
+						<div class="entry-top">
+							<div>
+								<div
+									style="
+										font-size: 12px;
+										font-weight: 800;
+										color: var(--green);
+										letter-spacing: 0.06em;
+									"
+								>
+									DEC 2022 — JAN 2025 • ~2 YEARS
+								</div>
+								<h3>
+									Spin On Web — SEO Executive + Travel Support
+								</h3>
+							</div>
+						</div>
+						<p>
+							My first real job. I did a bit of everything —
+							white-hat and (honestly) saw how black-hat stuff
+							works too. On-page, local SEO, QuickBooks support
+							pages, airline pages, Photoshop banners when the
+							designer was busy. I did my BCA → MCA studies
+							alongside this, so a lot of late nights.
+						</p>
+						<div class="lesson">
+							<strong>What it taught me:</strong> basics win.
+							Title tags, speed, internal links and actually
+							answering the query.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROJECTS -->
+			<section id="projects">
+				<div class="sec-label">work i'm proud of</div>
+				<h2 class="sec-title">Two sites I spent real time on.</h2>
+				<p class="sec-desc">
+					I won't throw fake “+500% traffic!!” numbers at you. Here's
+					what I did, what was hard, and what happened.
+				</p>
+				<div class="journal">
+					<div class="entry reveal">
+						<div class="entry-top">
+							<h3>Green Matter Packaging</h3>
+							<a
+								href="https://greenmatterpackaging.com"
+								target="_blank"
+								>greenmatterpackaging.com ↗</a
+							>
+						</div>
+						<p>
+							Eco-friendly packaging manufacturer. Problem: good
+							products, but product pages had thin content and
+							near-duplicate titles, and almost no local presence.
+						</p>
+						<div class="did">
+							<div>
+								<b>What I did</b>Keyword mapping per product,
+								rewrote titles/descriptions, internal linking
+								between categories, Google Business Profile +
+								citations, steady guest posts & listings.
+							</div>
+							<div>
+								<b>What was tricky</b>Very competitive
+								“packaging” keywords. We focused on longer,
+								buyer-intent terms first instead of fighting
+								giants head-on.
+							</div>
+						</div>
+						<p
+							class="hand"
+							style="font-size: 20px; color: var(--green)"
+						>
+							→ Pages started ranking for their core product terms
+							and enquiries got more relevant.
+						</p>
+					</div>
+
+					<div class="entry reveal">
+						<div class="entry-top">
+							<h3>The Monshas</h3>
+							<a href="https://themonshas.com" target="_blank"
+								>themonshas.com ↗</a
+							>
+						</div>
+						<p>
+							Ayurvedic products store. Problem: Shopify-style
+							product pages with little text, no blog structure,
+							technical niggles.
+						</p>
+						<div class="did">
+							<div>
+								<b>What I did</b>Optimized product + collection
+								pages, simple blog calendar around real
+								questions people ask, fixed indexing issues,
+								basic outreach for brand mentions.
+							</div>
+							<div>
+								<b>What I'd do differently</b>I’d push
+								video/shorts earlier — ayurvedic queries love
+								visual proof.
+								<span class="strike">Just more backlinks</span>
+								isn’t the answer.
+							</div>
+						</div>
+						<p
+							class="hand"
+							style="font-size: 20px; color: var(--green)"
+						>
+							→ Organic became a steadier channel instead of only
+							paid + social.
+						</p>
+					</div>
+
+					<div class="entry reveal">
+						<div class="entry-top">
+							<h3 style="font-size: 19px">
+								Also: Airlines Travel + QuickBooks support pages
+							</h3>
+						</div>
+						<p style="font-size: 14.5px">
+							Less glamorous, very educational. Support-intent SEO
+							(flight changes, refunds, QuickBooks errors) +
+							actual support calls. Taught me to write for
+							stressed people who need an answer fast — which is
+							most of Google, honestly.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- TOOLKIT -->
+			<section id="toolkit">
+				<div class="sec-label">toolkit</div>
+				<h2 class="sec-title">Tools I actually open.</h2>
+				<p class="sec-desc">
+					No 95% mastery bars — those never mean anything. Here's the
+					honest split:
+				</p>
+				<div class="tool-table reveal">
+					<div class="tool-row">
+						<div>Open daily</div>
+						<div>
+							<span class="pill">Google Search Console</span
+							><span class="pill">GA4</span
+							><span class="pill">Google Keyword Planner</span
+							><span class="pill">WordPress</span
+							><span class="pill">Sheets / Excel</span>
+						</div>
+					</div>
+					<div class="tool-row">
+						<div>Use often</div>
+						<div>
+							<span class="pill">SEMrush</span
+							><span class="pill">Ahrefs</span
+							><span class="pill">Screaming Frog</span
+							><span class="pill">Moz</span
+							><span class="pill">Canva</span
+							><span class="pill">Photoshop</span>
+						</div>
+					</div>
+					<div class="tool-row">
+						<div>Still learning</div>
+						<div>
+							<span class="pill">Advanced schema</span
+							><span class="pill">Python for SEO</span
+							><span class="pill">Looker Studio dashboards</span
+							><span class="pill"
+								>— and whatever Google changes next month</span
+							>
+						</div>
+					</div>
+				</div>
+				<p
+					class="hand"
+					style="
+						font-size: 21px;
+						margin-top: 12px;
+						color: var(--green);
+					"
+				>
+					+ strong basics: white-hat on-page / off-page, local SEO,
+					e-commerce SEO, digital marketing fundamentals.
+				</p>
+			</section>
+
+			<!-- LIFE -->
+			<section id="life">
+				<div class="sec-label">beyond the laptop</div>
+				<h2 class="sec-title">A bit about me.</h2>
+				<div class="life">
+					<div class="paper-card reveal">
+						<h3>Education — while working full-time</h3>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 8px;
+							"
+						>
+							<b>MCA</b>, Mangalayatan University, Aligarh
+							(2023–25)<br /><b>BCA</b>, B.R.A.B.U. Muzaffarpur,
+							Bihar (2018–21)<br /><span
+								style="color: var(--muted)"
+								>Class XII & X, BSEB Patna.</span
+							>
+						</p>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 10px;
+							"
+						>
+							Doing MCA alongside a full-time SEO + night-shift
+							support job wasn't fun. But understanding how
+							websites technically work (thanks, MCA) makes me a
+							better SEO than just knowing “tips”.
+						</p>
+						<p
+							style="
+								font-size: 14.5px;
+								color: #4c463e;
+								margin-top: 10px;
+							"
+						>
+							<b>How I work:</b> I like checklists, clear
+							deadlines, and managers who tell me the truth. I’m
+							adaptable, I don’t ego-fight developers, and I’ll
+							say “I don’t know, I’ll check” instead of bluffing.
+						</p>
+					</div>
+					<div class="note-yellow reveal">
+						<h3>When I'm not doing SEO…</h3>
+						<ul>
+							<li>
+								<b>Cricket</b> — playing on Sundays when I can,
+								watching whenever India plays. I’m that friend
+								who explains LBW for the 10th time.
+							</li>
+							<li>
+								<b>Old songs</b> — Kishore / Arijit on loop
+								during long audits. Fixes bounce rate? No. Fixes
+								my mood? Yes.
+							</li>
+							<li>
+								<b>Movies</b> — mostly for story ideas. Good
+								titles teach you good headlines.
+							</li>
+						</ul>
+						<p
+							class="hand"
+							style="font-size: 20px; margin-top: 10px"
+						>
+							P.S. My Photoshop “skills” started with making
+							cricket posters for friends.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="sec-label">let's talk</div>
+				<h2 class="sec-title">If you need honest SEO, say hi.</h2>
+				<div class="contact reveal">
+					<div>
+						<h2>Best way to reach me?</h2>
+						<p>
+							I'm looking for full-time SEO Executive roles (Delhi
+							NCR / remote) and small freelance audits. Send me
+							your website link and one line about the problem —
+							I'll reply honestly if I can help.
+						</p>
+						<p class="hand">
+							Best time: 10am – 7pm IST. Hindi or English, both
+							fine.
+						</p>
+						<div
+							style="
+								margin-top: 16px;
+								display: flex;
+								gap: 10px;
+								flex-wrap: wrap;
+							"
+						>
+							<a
+								class="btn"
+								style="
+									background: var(--yellow);
+									color: #111;
+									border-color: var(--yellow);
+								"
+								href="mailto:anamitnanddeo96@gmail.com"
+								><i class="fa-solid fa-paper-plane"></i> Email
+								me</a
+							>
+							<a
+								class="btn btn-light"
+								style="
+									background: transparent;
+									color: #fff;
+									border-color: #4a443c;
+								"
+								href="https://drive.google.com/file/d/1WYoxtH2Nz3jP9K0hGNncuh7u9XZ3RM4y/view"
+								target="_blank"
+								>Resume PDF</a
+							>
+						</div>
+					</div>
+					<div class="c-list">
+						<a href="mailto:anamitnanddeo96@gmail.com"
+							><i class="fa-regular fa-envelope"></i>
+							anamitnanddeo96@gmail.com</a
+						>
+						<a href="tel:+919693689852"
+							><i class="fa-solid fa-phone"></i> +91 9693689852</a
+						>
+						<a href="https://wa.me/919693689852" target="_blank"
+							><i class="fa-brands fa-whatsapp"></i> WhatsApp
+							(fastest)</a
+						>
+						<a
+							href="https://linkedin.com/in/anmitnand-deo-4bba3b33b"
+							target="_blank"
+							><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+						>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container">
+				<p>
+					© <span id="yr"></span> Anamit Nand Deo • Delhi NCR, India
+				</p>
+				<p class="hand">
+					Built by me on a weekend. No template, no agency. If you
+					spot a typo, tell me — we'll already be friends.
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			document.getElementById("yr").textContent =
+				new Date().getFullYear();
+			const io = new IntersectionObserver(
+				(es) =>
+					es.forEach((e) => {
+						if (e.isIntersecting) {
+							e.target.classList.add("visible");
+							io.unobserve(e.target);
+						}
+					}),
+				{ threshold: 0.12 },
+			);
+			document
+				.querySelectorAll(".reveal")
+				.forEach((el) => io.observe(el));
+		</script>
+	</body>
+</html>
